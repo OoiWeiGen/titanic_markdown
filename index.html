@@ -14955,9 +14955,9 @@ Median age before missing values: 28.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="Explain-what-the-command-does-and-means">Explain what the command does and means<a class="anchor-link" href="#Explain-what-the-command-does-and-means">&#182;</a></h5><p>1) print(df.isnull().sum()): This command calculates the total number of missing values in each column of the DataFrame 'df' and prints the result.
-2) df['Age'].median()<code>: This line calculates the median agge from the 'Age' column of the DataFrame.
-3) df['Age'].fillna(median_age)</code>: This command fills the missing values in the 'Age' column of the DataFrame  with the calculated median age.</p>
+<h5 id="Explain-what-the-command-does-and-means">Explain what the command does and means<a class="anchor-link" href="#Explain-what-the-command-does-and-means">&#182;</a></h5><p>1) print(df.isnull().sum()): This command calculates the total number of missing values in each column of the DataFrame 'df' and prints the result.</p>
+<p>2) df['Age'].median(): This line calculates the median agge from the 'Age' column of the DataFrame.</p>
+<p>3) df['Age'].fillna(median_age)`: This command fills the missing values in the 'Age' column of the DataFrame  with the calculated median age.</p>
 <h5 id="Explanation-of-the-output">Explanation of the output<a class="anchor-link" href="#Explanation-of-the-output">&#182;</a></h5><p>1) The code first identifies and reports the number of missing values in each column, then calculates the median age from the 'Age' column, and finally replaces missing values in the 'Age' column with the calculated median age.</p>
 
 </div>
@@ -15057,18 +15057,14 @@ Name: Survived, dtype: float64
 <ul>
 <li>print(df['Sex'].value_counts()): This command calculates and prints the count of passengers for each gender category ('male' and 'female') in the DataFrame. It utilizes the 'value_counts()' method to count the occurrences of each unique value in the 'Sex' column.</li>
 </ul>
-<ol>
-<li><p>Average age of passengers:</p>
+<p>2) Average age of passengers:</p>
 <ul>
 <li><p>print('Average age of passengers:'): This line prints a message indicating that the following output will display the average age of passengers.</p>
 </li>
 <li><p>print(df['Age'].mean()): This command calculates and prints the average (mean) age of all passengers in the DataFrame. It calculates the mean value of the 'Age' column.</p>
 </li>
 </ul>
-</li>
-</ol>
-<ol>
-<li><p>Survival rate by passenger class:</p>
+<p>3) Survival rate by passenger class:</p>
 <ul>
 <li><p>'print('Survival rate by passenger class')': This line prints a message indicating that the following output will show the survival rate by passenger class.</p>
 </li>
@@ -15077,8 +15073,6 @@ Name: Survived, dtype: float64
 <li><p>'print(survival_rate)': This command prints the calculated survival rates for each passenger class.</p>
 </li>
 </ul>
-</li>
-</ol>
 <h5 id="Explanation-of-the-output">Explanation of the output<a class="anchor-link" href="#Explanation-of-the-output">&#182;</a></h5><p>1) Count of Passengers by Gender: This part of the output displays the number of passengers categorized by gender ('male' and 'female') in the dataset.</p>
 <p>2) Average Age of Passengers: This section provides the average age of all passengers in the dataset, indicating the typical age of a passenger on average.</p>
 <p>3) Survival Rate by Passenger Class: This part of the output shows the survival rates for passengers based on their class ('Pclass'). It indicates the percentage of passengers who survived within each class category, giving insight into how survival chances varied across different classes.</p>
@@ -15184,7 +15178,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="Explain-what-the-code-does-and-means">Explain what the code does and means<a class="anchor-link" href="#Explain-what-the-code-does-and-means">&#182;</a></h5><h3 id="Shorter-Explanation">Shorter Explanation<a class="anchor-link" href="#Shorter-Explanation">&#182;</a></h3><ol>
+<h5 id="Explain-what-the-code-does-and-means">Explain what the code does and means<a class="anchor-link" href="#Explain-what-the-code-does-and-means">&#182;</a></h5><ol>
 <li><p>Calculate the Mean Survival Rate by Passenger Class:</p>
 <ul>
 <li>survival_rates = df.groupby('Pclass')['Survived'].mean()': Groups data by 'Pclass' and calculates the average survival rate for each class.</li>
